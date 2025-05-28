@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Batch Guides Extension</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/CSInterface.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Batch Guides</h1>
+        <div class="form-group">
+            <label for="hGuides">Number of Horizontal Guide Pairs:</label>
+            <input type="number" id="hGuides" value="3" min="0">
+        </div>
+        <div class="form-group">
+            <label for="vGuides">Number of Vertical Guide Pairs:</label>
+            <input type="number" id="vGuides" value="3" min="0">
+        </div>
+        <div class="form-group">
+            <label for="hMargin">Margin Between Horizontal Guides (px):</label>
+            <input type="number" id="hMargin" value="0" min="0">
+        </div>
+        <div class="form-group">
+            <label for="vMargin">Margin Between Vertical Guides (px):</label>
+            <input type="number" id="vMargin" value="0" min="0">
+        </div>
+        <div class="form-group checkbox">
+            <input type="checkbox" id="includeEdges">
+            <label for="includeEdges">Include guides at edges</label>
+        </div>
+        <div class="form-group checkbox">
+            <input type="checkbox" id="clearExisting" checked>
+            <label for="clearExisting">Clear existing guides</label>
+        </div>
+        <div class="button-group">
+            <button id="applyButton">Apply</button>
+            <button id="clearAllButton">Clear All Guides</button>
+        </div>
+        <div id="status" class="status"></div>
+        <div class="footer">
+            <p>Created by Koray Birand 2025</p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
